@@ -273,3 +273,63 @@ body {
 
 .attribution a {
   color: #3e52a3; }
+
+#form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  position: relative; }
+  @media (max-width: 600px) {
+    #form {
+      width: 100%;
+      height: 5rem;
+      margin-bottom: 4rem; } }
+
+input {
+  border: none;
+  width: 100%; }
+
+.input-container {
+  margin-right: 2rem; }
+
+.error-circle {
+  position: absolute;
+  width: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 11rem;
+  display: none; }
+  @media (max-width: 600px) {
+    .error-circle {
+      right: 7rem; } }
+
+.arrow {
+  width: 1.2rem; }
+
+.error-message {
+  color: white;
+  font-weight: 400;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: none; }
+  @media (max-width: 600px) {
+    .error-message {
+      margin-top: -2rem; } }
+
+.form-error {
+  border: 2px solid red !important; }
+
+.box-error {
+  padding-bottom: 2rem;
+  background-color: red; }
+
+.footer {
+  background-color: #252b46;
+  display: flex;
+  justify-content: center;
+  color: #fff; }
+
+.footer-logo {
+  width: 20rem; }

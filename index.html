@@ -226,7 +226,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
             <path
               class="svg-icon"
-              id="svg-icon-3"
+              id="svg-icon-2"
               fill="none"
               stroke-width="3"
               d="M1 1l8 8 8-8"
@@ -243,7 +243,20 @@
         </p>
       </div>
 
-      <button class="accordion">What about other Chromium browsers?</button>
+      <button class="accordion">
+        What about other Chromium browsers?
+        <div class="arrow-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+            <path
+              class="svg-icon"
+              id="svg-icon-3"
+              fill="none"
+              stroke-width="3"
+              d="M1 1l8 8 8-8"
+            />
+          </svg>
+        </div>
+      </button>
       <div class="panel">
         <p>
           Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
@@ -259,16 +272,19 @@
       <div class="action-box">
         <p>35,000+ already joined</p>
         <h2>Stay up-to-date with what we’re doing</h2>
-        <input />
-        <button>Contact Us</button>
+        <form id="form">
+          <div class="input-container">
+            <input id="input" type="email" placeholder="Email Address" />
+            <img class="error-circle" src="images/icon-error.svg" alt="" />
+            <div class="error-message">Please Provide a vaild email</div>
+          </div>
+
+          <button id="button-submit">Contact Us</button>
+        </form>
       </div>
     </section>
-    <footer>
-      <img
-        class="hero-container__intro-image"
-        src="images/logo-bookmark.svg"
-        alt=""
-      />
+    <footer class="footer">
+      <img class="footer-logo" src="images/logo-bookmark-footer.svg" alt="" />
       <p>Contact Us</p>
       <p>Features</p>
       <p>Pricing</p>

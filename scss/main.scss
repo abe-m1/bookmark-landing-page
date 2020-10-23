@@ -387,3 +387,87 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+///@at-root
+
+#form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // flex-direction: row;
+  // border: 1px solid $grayishBlue;
+  // height: 6rem;
+  padding-left: 20px;
+  position: relative;
+  // border-radius: 50px;
+
+  @include respond(phone) {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+input {
+  // flex-grow: 3;
+  border: none;
+  width: 100%;
+  // border-radius: 50px;
+  // background-color: transparent;
+  // margin-left: 2rem;
+}
+
+.input-container {
+  margin-right: 2rem;
+}
+
+.error-circle {
+  position: absolute;
+  width: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 11rem;
+  display: none;
+
+  @include respond(phone) {
+    right: 7rem;
+  }
+}
+
+.arrow {
+  width: 1.2rem;
+}
+
+.error-message {
+  color: white;
+  font-weight: 400;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: none;
+
+  @include respond(phone) {
+    margin-top: -2rem;
+  }
+}
+
+.form-error {
+  border: 2px solid red !important;
+}
+
+.box-error {
+  padding-bottom: 2rem;
+  background-color: red;
+}
+
+//
+.footer {
+  background-color: $veryDarkBlue;
+  display: flex;
+  justify-content: center;
+  color: $white;
+}
+
+.footer-logo {
+  width: 20rem;
+}

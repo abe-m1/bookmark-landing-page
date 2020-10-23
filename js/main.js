@@ -52,3 +52,29 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+const submitButton = document.querySelector('#button-submit');
+const input = document.querySelector('#input');
+const errorMessage = document.querySelector('.error-message');
+const errorCircle = document.querySelector('.error-circle');
+const inputContainer = document.querySelector('.input-container');
+const form = document.querySelector('#form');
+
+function validate(e) {
+  e.preventDefault();
+  const regEx = /^.+@\w+\.\w+$/;
+  console.log(input.value);
+  if (regEx.test(String(input.value).toLowerCase())) {
+    console.log('valid');
+    errorCircle.style.display = 'none';
+    form.classList.remove('form-error');
+    errorMessage.style.display = 'none';
+  } else {
+    errorCircle.style.display = 'block';
+    errorMessage.style.display = 'block';
+    input.classList.add('form-error');
+    inputContainer.classList.add('box-error');
+  }
+}
+
+submitButton.addEventListener('click', validate);
