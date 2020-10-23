@@ -35,6 +35,131 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 1.8rem; }
 
+.header {
+  width: 80%;
+  margin: auto;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem; }
+  .header__logo {
+    width: 8rem; }
+  .header__menu {
+    font-size: 1.4rem;
+    display: flex; }
+    .header__menu__menu-item {
+      list-style: none; }
+      .header__menu__menu-item:not(:last-child) {
+        margin-right: 1rem; }
+      @media (max-width: 900px) {
+        .header__menu__menu-item {
+          font-size: 1.9rem; }
+          .header__menu__menu-item:not(:last-child) {
+            margin-right: 6rem; } }
+
+.hero {
+  display: flex; }
+
+.inter {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 4rem; }
+
+/* Tabs */
+.tabs {
+  width: 60%;
+  margin: auto;
+  padding-top: 1rem;
+  border-bottom: 1px solid #9194a1;
+  border-right: none;
+  margin-bottom: 3rem; }
+
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.tab-item {
+  padding: 2rem; }
+
+.tab-border {
+  border-bottom: #fa5757 4px solid; }
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+  opacity: 0; }
+
+.show {
+  display: block !important;
+  opacity: 1 !important;
+  transition: all 1000 ease-in; }
+
+.tab-content-inner {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 8rem; }
+
+.tab-left {
+  flex: 1; }
+
+.tab-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem; }
+
+.box {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 3rem 2rem; }
+  .box:not(:last-of-type) {
+    margin-right: 2rem; }
+
+.accordion-container {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 4rem; }
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #9194a1;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s; }
+
+.active,
+.accordion:hover {
+  color: #fa5757; }
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden; }
+
+.action-container {
+  background-color: #5368df;
+  padding: 3rem 4rem; }
+
 .attribution {
   font-size: 11px;
   text-align: center; }

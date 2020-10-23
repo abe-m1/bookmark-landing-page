@@ -68,11 +68,11 @@
       <div class="container">
         <!-- tab content 1 -->
         <div id="tab-1-content" class="tab-content-item show">
-          <div class="tab-1-content-inner">
-            <div>
+          <div class="tab-content-inner">
+            <div class="tab-left">
               <img src="images/illustration-features-tab-1.svg" alt="" />
             </div>
-            <div>
+            <div class="tab-right">
               <h2>Bookmark in one click</h2>
               <p>
                 Organize your bookmarks however you like. Our simple
@@ -85,31 +85,35 @@
         </div>
 
         <div id="tab-2-content" class="tab-content-item">
-          <div>
-            <img src="images/illustration-features-tab-2.svg" alt="" />
-          </div>
-          <div>
-            <h2>Intelligent search</h2>
-            <p>
-              Our powerful search feature will help you find saved sites in no
-              time at all. No need to trawl through all of your bookmarks.
-            </p>
-            <button>More Info</button>
+          <div class="tab-content-inner">
+            <div class="tab-left">
+              <img src="images/illustration-features-tab-2.svg" alt="" />
+            </div>
+            <div class="tab-right">
+              <h2>Intelligent search</h2>
+              <p>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button>More Info</button>
+            </div>
           </div>
         </div>
 
         <!-- Tab Content 3 -->
         <div id="tab-3-content" class="tab-content-item">
-          <div>
-            <img src="images/illustration-features-tab-3.svg" alt="" />
-          </div>
-          <div>
-            <h2>Share your bookmarks</h2>
-            <p>
-              Easily share your bookmarks and collections with others. Create a
-              shareable link that you can send at the click of a button.
-            </p>
-            <button>More Info</button>
+          <div class="tab-content-inner">
+            <div class="tab-left">
+              <img src="images/illustration-features-tab-3.svg" alt="" />
+            </div>
+            <div class="tab-right">
+              <h2>Share your bookmarks</h2>
+              <p>
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button>More Info</button>
+            </div>
           </div>
         </div>
       </div>
@@ -130,13 +134,13 @@
         <button>Add & Install Extension</button>
       </div>
       <div class="box">
-        <img src="images/logo-chrome.svg" alt="" />
+        <img src="images/logo-firefox.svg" alt="" />
         <h2>Add to Firefox</h2>
         <p>Minimum version 55</p>
         <button>Add & Install Extension</button>
       </div>
       <div class="box">
-        <img src="images/logo-chrome.svg" alt="" />
+        <img src="images/logo-opera.svg" alt="" />
         <h2>Add to Opera</h2>
         <p>Minimum version 46</p>
         <button>Add & Install Extension</button>
@@ -151,7 +155,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="accordion-container">
       <button class="accordion">What is Bookmark?</button>
       <div class="panel">
         <p>
@@ -161,7 +165,10 @@
         </p>
       </div>
 
-      <button class="accordion">How can I request a new browser?</button>
+      <button class="accordion">
+        How can I request a new browser?
+        <!-- <img class="" src="images/icon-arrow.svg" alt="" /> -->
+      </button>
       <div class="panel">
         <p>
           Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
@@ -192,7 +199,7 @@
       </div>
       <button>More Info</button>
     </section>
-    <section>
+    <section class="action-container">
       <p>35,000+ already joined</p>
       <h2>Stay up-to-date with what we’re doing</h2>
       <input />
@@ -201,7 +208,7 @@
     <footer>
       <img
         class="hero-container__intro-image"
-        src="images/illustration-hero.svg"
+        src="images/logo-bookmark.svg"
         alt=""
       />
       <p>Contact Us</p>
@@ -218,4 +225,5 @@
       </p>
     </footer>
   </body>
+  <script src="js/main.js"></script>
 </html>
