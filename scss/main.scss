@@ -26,6 +26,7 @@ $softBlue: hsl(231, 69%, 60%);
 $softRed: hsl(0, 94%, 66%);
 $grayishBlue: hsl(229, 8%, 60%);
 $veryDarkBlue: hsl(229, 31%, 21%);
+$white: #fff;
 
 //mixins
 @mixin respond($breakpoint) {
@@ -115,12 +116,57 @@ body {
 
 .hero {
   display: flex;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+
+.headline {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.headline-text {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: $grayishBlue;
+}
+
+.button {
+  border: none;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+
+  &:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+
+  &--blue {
+    background-color: $softBlue;
+    color: $white;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inter {
   width: 50%;
   margin: auto;
   margin-bottom: 4rem;
+  text-align: center;
+}
+
+.inter h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.inter p {
+  color: $grayishBlue;
 }
 
 /* Tabs */
@@ -148,7 +194,7 @@ body {
 }
 
 .tab-border {
-  border-bottom: $softRed 4px solid;
+  border-bottom: $softRed 3px solid;
 }
 
 #tab-1-content,
@@ -174,31 +220,78 @@ body {
 .tab-left {
   flex: 1;
 }
+
+.tab-left {
+  flex: 1;
+}
+
 .tab-right {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 0 5rem;
+}
+
+.tab-right h2 {
+  margin-bottom: 2rem;
+}
+
+.tab-right p {
+  color: $grayishBlue;
+  margin-bottom: 2rem;
+}
+
+.tab-image {
+  width: 75%;
 }
 
 ////
 .row {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 19rem;
 }
 
 .box {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(/images/bg-dots.svg) no-repeat 10% 66%;
+  // background-size: 5% 5%;
 
   &:not(:last-of-type) {
     margin-right: 2rem;
   }
+
+  &:nth-child(2) {
+    top: 2rem;
+    position: relative;
+  }
+
+  &:nth-child(3) {
+    top: 4rem;
+    position: relative;
+  }
 }
 
+.browser-logo {
+  width: 9rem;
+  margin-bottom: 2rem;
+}
+
+.box h2 {
+  margin-bottom: 1.5rem;
+}
+
+.box p {
+  color: $grayishBlue;
+  margin-bottom: 7rem;
+}
 ////
 .accordion-container {
   width: 50%;
@@ -218,11 +311,44 @@ body {
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+
+  &:first-child {
+    border-top: 1px solid $grayishBlue;
+  }
+}
+
+.more-info {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.svg-icon {
+  // width: 2rem;
+  stroke: $softBlue;
+}
+
+.svg-icon1 {
+  // width: 2rem;
+  stroke: blue;
+}
+
+.up {
+  transform: rotate(180deg);
+}
+
+.down {
+  display: none;
 }
 
 .active,
 .accordion:hover {
   color: $softRed;
+}
+
+.accordian-active {
+  transform: rotate(-180deg);
 }
 
 .panel {
@@ -235,6 +361,23 @@ body {
 .action-container {
   background-color: $softBlue;
   padding: 3rem 4rem;
+  color: $white;
+  text-align: center;
+}
+
+.action-container p {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.action-container h2 {
+  font-size: 3.9rem;
+  margin-bottom: 3rem;
+}
+
+.action-box {
+  width: 50%;
+  margin: auto;
 }
 
 .attribution {
