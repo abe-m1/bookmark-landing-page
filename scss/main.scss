@@ -95,6 +95,7 @@ body {
   &__menu {
     font-size: 1.4rem;
     display: flex;
+    align-items: center;
 
     &__menu-item {
       list-style: none;
@@ -136,14 +137,38 @@ body {
   border: none;
   padding: 2rem 3rem;
   border-radius: 1rem;
+  border: 1px solid transparent;
 
   &:not(:last-of-type) {
     margin-right: 2rem;
   }
 
+  &:hover {
+    background-color: $white;
+    color: $grayishBlue;
+    border: 1px solid $grayishBlue;
+  }
+
   &--blue {
     background-color: $softBlue;
     color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $softBlue;
+      border: 1px solid $softBlue;
+    }
+  }
+
+  &--red {
+    background-color: $softRed;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $softRed;
+      border: 1px solid $softRed;
+    }
   }
 }
 
@@ -191,6 +216,9 @@ body {
 
 .tab-item {
   padding: 2rem;
+  &:hover {
+    color: $softRed;
+  }
 }
 
 .tab-border {
