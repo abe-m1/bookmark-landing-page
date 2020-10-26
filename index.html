@@ -21,10 +21,11 @@
         <li class="header__menu__menu-item">Features</li>
         <li class="header__menu__menu-item">Pricing</li>
         <li class="header__menu__menu-item">Contact</li>
-        <li class="header__menu__menu-item">
-          <button class="button button--red">Login</button>
-        </li>
+        <li class="header__menu__menu-item">Login</li>
       </ul>
+      <a href="" id="nav-button">
+        <img class="hamburger" src="images/icon-hamburger.svg" alt="" />
+      </a>
     </header>
     <section class="hero">
       <div class="right">
@@ -40,12 +41,9 @@
         </div>
       </div>
       <div class="left">
-        <img
-          class="hero-container__intro-image"
-          src="images/illustration-hero.svg"
-          alt=""
-        />
+        <img class="hero-image" src="images/illustration-hero.svg" alt="" />
       </div>
+      <div class="blue-pattern"></div>
     </section>
     <section class="inter">
       <h2>Features</h2>
@@ -80,6 +78,7 @@
                 src="images/illustration-features-tab-1.svg"
                 alt=""
               />
+              <div class="blue-pattern-tab"></div>
             </div>
             <div class="tab-right">
               <h2>Bookmark in one click</h2>
@@ -97,7 +96,7 @@
           <div class="tab-content-inner">
             <div class="tab-left">
               <img
-                class="tab-image"
+                class="tab-image-small"
                 src="images/illustration-features-tab-2.svg"
                 alt=""
               />
@@ -118,7 +117,7 @@
           <div class="tab-content-inner">
             <div class="tab-left">
               <img
-                class="tab-image"
+                class="tab-image-small"
                 src="images/illustration-features-tab-3.svg"
                 alt=""
               />
@@ -276,22 +275,51 @@
         <h2>Stay up-to-date with what we’re doing</h2>
         <form id="form">
           <div class="input-container">
-            <input id="input" type="email" placeholder="Email Address" />
+            <input
+              id="input"
+              type="email"
+              placeholder="enter your email address"
+            />
             <img class="error-circle" src="images/icon-error.svg" alt="" />
             <div class="error-message">Please Provide a vaild email</div>
           </div>
 
-          <button id="button-submit">Contact Us</button>
+          <button id="button-submit" class="button button--red">
+            Contact Us
+          </button>
         </form>
       </div>
     </section>
-    <footer class="footer">
-      <img class="footer-logo" src="images/logo-bookmark-footer.svg" alt="" />
-      <p>Contact Us</p>
-      <p>Features</p>
-      <p>Pricing</p>
-      <p>Contact</p>
-    </footer>
+    <div class="footer-container">
+      <footer class="footer">
+        <img class="footer-logo" src="images/logo-bookmark-footer.svg" alt="" />
+        <p>Contact Us</p>
+        <p>Features</p>
+        <p>Pricing</p>
+        <p>Contact</p>
+        <div class="">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+      </footer>
+    </div>
+
+    <div class="nav-container">
+      <div class="top-row-modal">
+        <img class="footer-logo" src="images/logo-bookmark-footer.svg" alt="" />
+        <a href="" id="nav-button">
+          <img class="hamburger" src="images/icon-close.svg" alt="" />
+        </a>
+      </div>
+
+      <ul class="">
+        <li class="ham-item">How we work</li>
+        <li class="ham-item">Blog</li>
+        <li class="ham-item">Account</li>
+        <li class="ham-item">View Plans</li>
+      </ul>
+    </div>
+
     <footer>
       <p class="attribution">
         Challenge by
@@ -302,4 +330,5 @@
     </footer>
   </body>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </html>

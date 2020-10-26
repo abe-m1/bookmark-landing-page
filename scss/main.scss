@@ -76,17 +76,17 @@ body {
 .header {
   width: 80%;
   margin: auto;
-  height: 6rem;
+  height: 14rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 
   @include respond(tab-port) {
   }
 
   &__logo {
-    width: 8rem;
+    width: 15rem;
 
     @include respond(tab-port) {
     }
@@ -99,13 +99,23 @@ body {
 
     &__menu-item {
       list-style: none;
+      text-transform: uppercase;
 
       &:not(:last-child) {
-        margin-right: 1rem;
+        margin-right: 4rem;
+      }
+
+      &:last-child {
+        background-color: $softRed;
+        padding: 1.4rem 2.8rem;
+        border-radius: 5px;
+        color: $white;
       }
 
       @include respond(tab-port) {
         font-size: 1.9rem;
+
+        display: none;
 
         &:not(:last-child) {
           margin-right: 6rem;
@@ -115,27 +125,56 @@ body {
   }
 }
 
+#nav-button {
+  display: none;
+  @include respond(phone) {
+    display: block;
+  }
+}
+
 .hero {
   display: flex;
   width: 70%;
   margin: auto;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
+  position: relative;
+
+  @include respond(phone) {
+    display: block;
+  }
+}
+
+.blue-pattern {
+  height: 30rem;
+  width: 60%;
+  background-color: $softBlue;
+  z-index: -1;
+  right: -24rem;
+  bottom: 0;
+  position: absolute;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.hero-image {
+  width: 133%;
 }
 
 .headline {
-  font-size: 4rem;
+  font-size: 4.5rem;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .headline-text {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   color: $grayishBlue;
 }
 
 .button {
   border: none;
-  padding: 2rem 3rem;
+  padding: 1.6rem 3rem;
   border-radius: 1rem;
   border: 1px solid transparent;
 
@@ -176,12 +215,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.left {
+  flex: 1;
 }
 
 .inter {
-  width: 50%;
+  width: 35%;
   margin: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
   text-align: center;
 }
 
@@ -192,6 +237,7 @@ body {
 
 .inter p {
   color: $grayishBlue;
+  line-height: 1.6;
 }
 
 /* Tabs */
@@ -205,6 +251,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.tab-content {
+  margin-bottom: 22rem;
+}
+
 .tabs .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -212,6 +262,10 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @include respond(phone) {
+    display: block;
+  }
 }
 
 .tab-item {
@@ -243,14 +297,16 @@ body {
   width: 80%;
   margin: auto;
   margin-bottom: 8rem;
+
+  @include respond(phone) {
+    display: block;
+  }
 }
 
 .tab-left {
   flex: 1;
-}
-
-.tab-left {
-  flex: 1;
+  padding-top: 4rem;
+  position: relative;
 }
 
 .tab-right {
@@ -259,7 +315,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 5rem;
+  padding-left: 5rem;
 }
 
 .tab-right h2 {
@@ -272,7 +328,23 @@ body {
 }
 
 .tab-image {
-  width: 75%;
+  width: 100%;
+}
+
+.tab-image-small {
+  width: 70%;
+}
+
+.blue-pattern-tab {
+  height: 30rem;
+  width: 100%;
+  background-color: $softBlue;
+  z-index: -1;
+  left: -16rem;
+  bottom: -66px;
+  position: absolute;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
 ////
@@ -280,12 +352,16 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 19rem;
+
+  @include respond(phone) {
+    display: block;
+  }
 }
 
 .box {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 3rem 2rem;
+  border-radius: 10px;
+  padding: 3rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,7 +369,7 @@ body {
   // background-size: 5% 5%;
 
   &:not(:last-of-type) {
-    margin-right: 2rem;
+    margin-right: 4rem;
   }
 
   &:nth-child(2) {
@@ -304,6 +380,10 @@ body {
   &:nth-child(3) {
     top: 4rem;
     position: relative;
+  }
+
+  @include respond(phone) {
+    display: block;
   }
 }
 
@@ -331,7 +411,7 @@ body {
 
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 24px;
   width: 100%;
   border: none;
   border-bottom: 1px solid $grayishBlue;
@@ -348,8 +428,9 @@ body {
 }
 
 .more-info {
-  margin-top: 3rem;
+  margin-top: 8rem;
   text-align: center;
+  margin-bottom: 14rem;
 }
 
 .svg-icon {
@@ -388,7 +469,7 @@ body {
 
 .action-container {
   background-color: $softBlue;
-  padding: 3rem 4rem;
+  padding: 6rem 4rem;
   color: $white;
   text-align: center;
 }
@@ -396,6 +477,8 @@ body {
 .action-container p {
   text-transform: uppercase;
   margin-bottom: 3rem;
+  letter-spacing: 0.4rem;
+  font-size: 1.4rem;
 }
 
 .action-container h2 {
@@ -404,7 +487,7 @@ body {
 }
 
 .action-box {
-  width: 50%;
+  width: 37%;
   margin: auto;
 }
 
@@ -421,7 +504,7 @@ body {
 #form {
   width: 100%;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   // flex-direction: row;
   // border: 1px solid $grayishBlue;
   // height: 6rem;
@@ -436,16 +519,23 @@ body {
   }
 }
 
-input {
+#input {
   // flex-grow: 3;
   border: none;
   width: 100%;
-  // border-radius: 50px;
+  padding: 2rem;
+  border-radius: 10px;
   // background-color: transparent;
   // margin-left: 2rem;
 }
 
+#button-submit {
+  flex: 1;
+}
+
 .input-container {
+  flex: 2;
+  margin: auto;
   margin-right: 2rem;
 }
 
@@ -489,13 +579,81 @@ input {
 }
 
 //
-.footer {
+.footer-container {
   background-color: $veryDarkBlue;
+  padding: 3rem 0;
+}
+.footer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   color: $white;
+  width: 80%;
+  margin: auto;
+  align-items: center;
 }
 
 .footer-logo {
   width: 20rem;
+  margin-right: 3rem;
+}
+
+.footer p {
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+
+ion-icon {
+  font-size: 25px;
+  color: #fff;
+  margin-left: 1.5rem;
+
+  &:not(:last-of-type) {
+    margin-left: 1.5rem;
+  }
+}
+
+.nav-container {
+  color: $white;
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 2.7rem 3rem 2.7rem 2rem;
+  // background: url(/images/bg-pattern-mobile-nav.svg) no-repeat bottom right;
+  // background-size: contain;
+  background-color: hsla(229, 31%, 21%, 0.9);
+  opacity: 60%;
+}
+.top-row-modal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+// .close {
+//   display: none;
+// }
+
+.ham-item {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  list-style: none;
+  border-bottom: 1px solid $grayishBlue;
+  &:first-child {
+    border-top: 1px solid $grayishBlue;
+  }
+
+  &:last-child {
+    border: 1px solid $white;
+    padding: 2rem;
+  }
 }
