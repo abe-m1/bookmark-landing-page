@@ -59,6 +59,10 @@ body {
         padding: 1.1rem 3.8rem;
         border-radius: 5px;
         color: #fff; }
+        .header__menu__menu-item:last-child:hover {
+          background-color: #fff;
+          border: 1px solid #fa5757;
+          color: #fa5757; }
       @media (max-width: 600px) {
         .header__menu__menu-item {
           font-size: 1.9rem;
@@ -96,7 +100,8 @@ body {
   @media (max-width: 600px) {
     .blue-pattern {
       right: -2rem;
-      top: 0; } }
+      top: 59px;
+      height: 21rem; } }
 
 .hero-image {
   width: 124%; }
@@ -111,12 +116,16 @@ body {
   @media (max-width: 600px) {
     .headline {
       font-size: 3.5rem;
-      text-align: center; } }
+      text-align: center;
+      font-weight: 400; } }
 
 .headline-text {
   font-size: 2rem;
   margin-bottom: 4rem;
   color: #9194a1; }
+  @media (max-width: 600px) {
+    .headline-text {
+      text-align: center; } }
 
 .button {
   border: none;
@@ -144,15 +153,25 @@ body {
       color: #fa5757;
       border: 1px solid #fa5757; }
 
+@media (max-width: 600px) {
+  .mobile-button {
+    width: 100%; } }
+
 .right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1; }
+  @media (max-width: 600px) {
+    .right {
+      margin-bottom: 5rem; } }
 
 .left {
   flex: 1; }
+  @media (max-width: 600px) {
+    .left {
+      margin-bottom: 6rem; } }
 
 .inter {
   width: 35%;
@@ -161,7 +180,8 @@ body {
   text-align: center; }
   @media (max-width: 600px) {
     .inter {
-      width: 90%; } }
+      width: 90%;
+      margin-bottom: 4rem; } }
 
 .inter h2 {
   font-size: 3rem;
@@ -186,6 +206,9 @@ body {
 
 .tab-content {
   margin-bottom: 22rem; }
+  @media (max-width: 600px) {
+    .tab-content {
+      margin-bottom: 14rem; } }
 
 .tabs .container {
   display: grid;
@@ -249,6 +272,10 @@ body {
   padding-top: 4rem;
   padding-left: 8rem;
   position: relative; }
+  @media (max-width: 600px) {
+    .tab-left {
+      margin-bottom: 10rem;
+      padding-left: 0; } }
 
 .tab-right {
   flex: 1;
@@ -257,6 +284,9 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-left: 7rem; }
+  @media (max-width: 600px) {
+    .tab-right {
+      padding-left: 0; } }
 
 .tab-right h2 {
   margin-bottom: 2rem; }
@@ -264,6 +294,9 @@ body {
 .tab-right p {
   color: #9194a1;
   margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    .tab-right p {
+      text-align: center; } }
 
 .tab-image {
   width: 100%; }
@@ -281,6 +314,11 @@ body {
   position: absolute;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px; }
+  @media (max-width: 600px) {
+    .blue-pattern-tab {
+      height: 22rem;
+      left: -6rem;
+      bottom: -33px; } }
 
 .row {
   display: flex;
@@ -308,13 +346,16 @@ body {
     position: relative; }
   @media (max-width: 600px) {
     .box {
-      display: block;
       width: 80%;
-      margin: auto; } }
+      margin: auto;
+      padding: 6rem 4rem 4.3rem 4rem; } }
 
 .browser-logo {
   width: 9rem;
   margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    .browser-logo {
+      width: 11rem; } }
 
 .box h2 {
   margin-bottom: 1.5rem; }
@@ -352,6 +393,9 @@ body {
   margin-top: 8rem;
   text-align: center;
   margin-bottom: 14rem; }
+  @media (max-width: 600px) {
+    .more-info {
+      margin-top: 4rem; } }
 
 .svg-icon {
   stroke: #5368df; }
@@ -388,17 +432,23 @@ body {
   text-align: center; }
   @media (max-width: 600px) {
     .action-container {
-      padding: 6rem 0; } }
+      padding: 8rem 0 3rem 0; } }
 
 .action-container p {
   text-transform: uppercase;
   margin-bottom: 3rem;
   letter-spacing: 0.4rem;
   font-size: 1.4rem; }
+  @media (max-width: 600px) {
+    .action-container p {
+      margin-bottom: 1.5rem; } }
 
 .action-container h2 {
   font-size: 3.9rem;
   margin-bottom: 3rem; }
+  @media (max-width: 600px) {
+    .action-container h2 {
+      font-size: 2.8rem; } }
 
 .action-box {
   width: 37%;
@@ -422,9 +472,9 @@ body {
   @media (max-width: 600px) {
     #form {
       width: 100%;
-      height: 5rem;
       margin-bottom: 4rem;
-      display: block; } }
+      display: block;
+      padding-left: 0; } }
 
 #input {
   border: none;
@@ -447,6 +497,9 @@ body {
   flex: 3;
   margin: auto;
   margin-right: 2rem; }
+  @media (max-width: 600px) {
+    .input-container {
+      margin-right: 0; } }
 
 .error-circle {
   position: absolute;
@@ -480,6 +533,9 @@ body {
   padding-bottom: 2rem;
   background-color: #fa5757;
   border-radius: 10px; }
+  @media (max-width: 600px) {
+    .box-error {
+      margin-bottom: 1rem; } }
 
 .footer-container {
   background-color: #252b46;
@@ -487,7 +543,7 @@ body {
 
 .footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   color: #fff;
   width: 80%;
   margin: auto;
@@ -495,6 +551,24 @@ body {
   @media (max-width: 600px) {
     .footer {
       flex-direction: column; } }
+
+.footer-items {
+  display: flex;
+  margin-right: auto; }
+  @media (max-width: 600px) {
+    .footer-items {
+      display: block;
+      text-align: center;
+      margin-right: 0; } }
+
+.footer-items li {
+  margin-left: 2rem; }
+  .footer-items li:hover {
+    color: #fa5757; }
+  @media (max-width: 600px) {
+    .footer-items li {
+      margin-bottom: 2.3rem;
+      font-size: 2rem; } }
 
 .footer-logo {
   width: 20rem;
@@ -515,6 +589,11 @@ ion-icon {
   margin-left: 1.5rem; }
   ion-icon:not(:last-of-type) {
     margin-left: 1.5rem; }
+  ion-icon:hover {
+    color: #fa5757; }
+  @media (max-width: 600px) {
+    ion-icon {
+      font-size: 30px; } }
 
 .nav-container {
   color: #fff;
@@ -529,6 +608,9 @@ ion-icon {
   background-color: rgba(37, 43, 70, 0.9);
   opacity: 60%; }
 
+.ham-list {
+  margin-bottom: 12rem; }
+
 .top-row-modal {
   display: flex;
   justify-content: space-between;
@@ -542,11 +624,17 @@ ion-icon {
 
 .ham-item {
   text-transform: uppercase;
-  margin-bottom: 3rem;
   list-style: none;
+  padding: 4rem;
   border-bottom: 1px solid #9194a1; }
   .ham-item:first-child {
     border-top: 1px solid #9194a1; }
+  .ham-item:nth-child(3) {
+    margin-bottom: 4rem; }
   .ham-item:last-child {
-    border: 1px solid #fff;
-    padding: 2rem; }
+    border: 2px solid #fff;
+    padding: 2rem;
+    border-radius: 4px; }
+
+.extra-margin-6 {
+  margin-bottom: 6rem; }

@@ -84,6 +84,7 @@ body {
 
   @include respond(phonr) {
     width: 90%;
+    margin-bottom: 2rem;
   }
 
   &__logo {
@@ -108,6 +109,12 @@ body {
         padding: 1.1rem 3.8rem;
         border-radius: 5px;
         color: $white;
+
+        &:hover {
+          background-color: $white;
+          border: 1px solid $softRed;
+          color: $softRed;
+        }
       }
 
       @include respond(phone) {
@@ -156,7 +163,8 @@ body {
 
   @include respond(phone) {
     right: -2rem;
-    top: 0;
+    top: 59px;
+    height: 21rem;
   }
 }
 
@@ -175,6 +183,7 @@ body {
   @include respond(phone) {
     font-size: 3.5rem;
     text-align: center;
+    font-weight: 400;
   }
 }
 
@@ -182,6 +191,9 @@ body {
   font-size: 2rem;
   margin-bottom: 4rem;
   color: $grayishBlue;
+  @include respond(phone) {
+    text-align: center;
+  }
 }
 
 .button {
@@ -223,16 +235,29 @@ body {
   }
 }
 
+.mobile-button {
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
 .right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1;
+
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 }
 
 .left {
   flex: 1;
+  @include respond(phone) {
+    margin-bottom: 6rem;
+  }
 }
 
 .inter {
@@ -243,6 +268,7 @@ body {
 
   @include respond(phone) {
     width: 90%;
+    margin-bottom: 4rem;
   }
 }
 
@@ -274,6 +300,9 @@ body {
 
 .tab-content {
   margin-bottom: 22rem;
+  @include respond(phone) {
+    margin-bottom: 14rem;
+  }
 }
 
 .tabs .container {
@@ -351,6 +380,11 @@ body {
   padding-left: 8rem;
   position: relative;
   // margin-right: 6rem;
+
+  @include respond(phone) {
+    margin-bottom: 10rem;
+    padding-left: 0;
+  }
 }
 
 .tab-right {
@@ -360,6 +394,10 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-left: 7rem;
+
+  @include respond(phone) {
+    padding-left: 0;
+  }
 }
 
 .tab-right h2 {
@@ -369,6 +407,10 @@ body {
 .tab-right p {
   color: $grayishBlue;
   margin-bottom: 2rem;
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }
 
 .tab-image {
@@ -391,6 +433,9 @@ body {
   border-bottom-right-radius: 100px;
 
   @include respond(phone) {
+    height: 22rem;
+    left: -6rem;
+    bottom: -33px;
   }
 }
 
@@ -430,15 +475,20 @@ body {
   }
 
   @include respond(phone) {
-    display: block;
+    // display: block;
     width: 80%;
     margin: auto;
+    padding: 6rem 4rem 4.3rem 4rem;
   }
 }
 
 .browser-logo {
   width: 9rem;
   margin-bottom: 2rem;
+
+  @include respond(phone) {
+    width: 11rem;
+  }
 }
 
 .box h2 {
@@ -484,6 +534,10 @@ body {
   margin-top: 8rem;
   text-align: center;
   margin-bottom: 14rem;
+
+  @include respond(phone) {
+    margin-top: 4rem;
+  }
 }
 
 .svg-icon {
@@ -531,7 +585,7 @@ body {
   text-align: center;
 
   @include respond(phone) {
-    padding: 6rem 0;
+    padding: 8rem 0 3rem 0;
   }
 }
 
@@ -540,11 +594,19 @@ body {
   margin-bottom: 3rem;
   letter-spacing: 0.4rem;
   font-size: 1.4rem;
+
+  @include respond(phone) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .action-container h2 {
   font-size: 3.9rem;
   margin-bottom: 3rem;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
 }
 
 .action-box {
@@ -579,9 +641,10 @@ body {
 
   @include respond(phone) {
     width: 100%;
-    height: 5rem;
+    // height: 5rem;
     margin-bottom: 4rem;
     display: block;
+    padding-left: 0;
   }
 }
 
@@ -613,6 +676,10 @@ body {
   flex: 3;
   margin: auto;
   margin-right: 2rem;
+
+  @include respond(phone) {
+    margin-right: 0;
+  }
 }
 
 .error-circle {
@@ -653,6 +720,10 @@ body {
   padding-bottom: 2rem;
   background-color: $softRed;
   border-radius: 10px;
+
+  @include respond(phone) {
+    margin-bottom: 1rem;
+  }
 }
 
 //
@@ -662,7 +733,7 @@ body {
 }
 .footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   color: $white;
   width: 80%;
   margin: auto;
@@ -670,6 +741,30 @@ body {
 
   @include respond(phone) {
     flex-direction: column;
+  }
+}
+
+.footer-items {
+  display: flex;
+  margin-right: auto;
+
+  @include respond(phone) {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+.footer-items li {
+  margin-left: 2rem;
+
+  &:hover {
+    color: $softRed;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 2.3rem;
+    font-size: 2rem;
   }
 }
 
@@ -700,6 +795,14 @@ ion-icon {
   &:not(:last-of-type) {
     margin-left: 1.5rem;
   }
+
+  &:hover {
+    color: $softRed;
+  }
+
+  @include respond(phone) {
+    font-size: 30px;
+  }
 }
 
 .nav-container {
@@ -716,6 +819,10 @@ ion-icon {
   // background-size: contain;
   background-color: hsla(229, 31%, 21%, 0.9);
   opacity: 60%;
+}
+
+.ham-list {
+  margin-bottom: 12rem;
 }
 .top-row-modal {
   display: flex;
@@ -734,15 +841,24 @@ ion-icon {
 
 .ham-item {
   text-transform: uppercase;
-  margin-bottom: 3rem;
   list-style: none;
+  padding: 4rem;
   border-bottom: 1px solid $grayishBlue;
   &:first-child {
     border-top: 1px solid $grayishBlue;
   }
 
-  &:last-child {
-    border: 1px solid $white;
-    padding: 2rem;
+  &:nth-child(3) {
+    margin-bottom: 4rem;
   }
+
+  &:last-child {
+    border: 2px solid $white;
+    padding: 2rem;
+    border-radius: 4px;
+  }
+}
+
+.extra-margin-6 {
+  margin-bottom: 6rem;
 }
