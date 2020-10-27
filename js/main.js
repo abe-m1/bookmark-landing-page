@@ -69,6 +69,7 @@ function validate(e) {
     errorCircle.style.display = 'none';
     form.classList.remove('form-error');
     errorMessage.style.display = 'none';
+    inputContainer.classList.remove('box-error');
   } else {
     errorCircle.style.display = 'block';
     errorMessage.style.display = 'block';

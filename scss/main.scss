@@ -105,7 +105,7 @@ body {
 
       &:last-child {
         background-color: $softRed;
-        padding: 1.4rem 2.8rem;
+        padding: 1.1rem 3.8rem;
         border-radius: 5px;
         color: $white;
       }
@@ -132,7 +132,7 @@ body {
 
 .hero {
   display: flex;
-  width: 70%;
+  width: 76%;
   margin: auto;
   margin-bottom: 12rem;
   position: relative;
@@ -144,12 +144,12 @@ body {
 }
 
 .blue-pattern {
-  height: 30rem;
+  height: 35rem;
   width: 60%;
   background-color: $softBlue;
   z-index: -1;
   right: -24rem;
-  bottom: 0;
+  bottom: -39px;
   position: absolute;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
@@ -161,7 +161,7 @@ body {
 }
 
 .hero-image {
-  width: 133%;
+  width: 124%;
   @include respond(phone) {
     width: 100%;
   }
@@ -187,11 +187,11 @@ body {
 .button {
   border: none;
   padding: 1.6rem 3rem;
-  border-radius: 1rem;
+  border-radius: 10px;
   border: 1px solid transparent;
 
   &:not(:last-of-type) {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
 
   &:hover {
@@ -348,7 +348,9 @@ body {
 .tab-left {
   flex: 1;
   padding-top: 4rem;
+  padding-left: 8rem;
   position: relative;
+  // margin-right: 6rem;
 }
 
 .tab-right {
@@ -357,7 +359,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 5rem;
+  padding-left: 7rem;
 }
 
 .tab-right h2 {
@@ -374,7 +376,7 @@ body {
 }
 
 .tab-image-small {
-  width: 70%;
+  width: 95%;
 }
 
 .blue-pattern-tab {
@@ -591,6 +593,7 @@ body {
   border-radius: 10px;
   // background-color: transparent;
   // margin-left: 2rem;
+  margin-bottom: 4rem;
 
   @include respond(phone) {
     margin-bottom: 2rem;
@@ -599,6 +602,7 @@ body {
 
 #button-submit {
   flex: 1;
+  height: 6rem;
 
   @include respond(phone) {
     width: 100%;
@@ -606,7 +610,7 @@ body {
 }
 
 .input-container {
-  flex: 2;
+  flex: 3;
   margin: auto;
   margin-right: 2rem;
 }
@@ -614,9 +618,9 @@ body {
 .error-circle {
   position: absolute;
   width: 3rem;
-  top: 50%;
+  top: 26%;
   transform: translateY(-50%);
-  right: 11rem;
+  right: 21rem;
   display: none;
 
   @include respond(phone) {
@@ -632,7 +636,7 @@ body {
   color: white;
   font-weight: 400;
   margin-left: 3rem;
-  margin-top: 1rem;
+  margin-top: -2rem;
   font-size: 1.2rem;
   display: none;
 
@@ -647,7 +651,8 @@ body {
 
 .box-error {
   padding-bottom: 2rem;
-  background-color: red;
+  background-color: $softRed;
+  border-radius: 10px;
 }
 
 //

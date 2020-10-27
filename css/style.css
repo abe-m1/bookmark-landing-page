@@ -56,7 +56,7 @@ body {
         margin-right: 4rem; }
       .header__menu__menu-item:last-child {
         background-color: #fa5757;
-        padding: 1.4rem 2.8rem;
+        padding: 1.1rem 3.8rem;
         border-radius: 5px;
         color: #fff; }
       @media (max-width: 600px) {
@@ -74,7 +74,7 @@ body {
 
 .hero {
   display: flex;
-  width: 70%;
+  width: 76%;
   margin: auto;
   margin-bottom: 12rem;
   position: relative; }
@@ -84,12 +84,12 @@ body {
       width: 90%; } }
 
 .blue-pattern {
-  height: 30rem;
+  height: 35rem;
   width: 60%;
   background-color: #5368df;
   z-index: -1;
   right: -24rem;
-  bottom: 0;
+  bottom: -39px;
   position: absolute;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px; }
@@ -99,7 +99,7 @@ body {
       top: 0; } }
 
 .hero-image {
-  width: 133%; }
+  width: 124%; }
   @media (max-width: 600px) {
     .hero-image {
       width: 100%; } }
@@ -121,10 +121,10 @@ body {
 .button {
   border: none;
   padding: 1.6rem 3rem;
-  border-radius: 1rem;
+  border-radius: 10px;
   border: 1px solid transparent; }
   .button:not(:last-of-type) {
-    margin-right: 2rem; }
+    margin-right: 1.5rem; }
   .button:hover {
     background-color: #fff;
     color: #9194a1;
@@ -247,6 +247,7 @@ body {
 .tab-left {
   flex: 1;
   padding-top: 4rem;
+  padding-left: 8rem;
   position: relative; }
 
 .tab-right {
@@ -255,7 +256,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 5rem; }
+  padding-left: 7rem; }
 
 .tab-right h2 {
   margin-bottom: 2rem; }
@@ -268,7 +269,7 @@ body {
   width: 100%; }
 
 .tab-image-small {
-  width: 70%; }
+  width: 95%; }
 
 .blue-pattern-tab {
   height: 30rem;
@@ -429,28 +430,30 @@ body {
   border: none;
   width: 100%;
   padding: 2rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-bottom: 4rem; }
   @media (max-width: 600px) {
     #input {
       margin-bottom: 2rem; } }
 
 #button-submit {
-  flex: 1; }
+  flex: 1;
+  height: 6rem; }
   @media (max-width: 600px) {
     #button-submit {
       width: 100%; } }
 
 .input-container {
-  flex: 2;
+  flex: 3;
   margin: auto;
   margin-right: 2rem; }
 
 .error-circle {
   position: absolute;
   width: 3rem;
-  top: 50%;
+  top: 26%;
   transform: translateY(-50%);
-  right: 11rem;
+  right: 21rem;
   display: none; }
   @media (max-width: 600px) {
     .error-circle {
@@ -463,7 +466,7 @@ body {
   color: white;
   font-weight: 400;
   margin-left: 3rem;
-  margin-top: 1rem;
+  margin-top: -2rem;
   font-size: 1.2rem;
   display: none; }
   @media (max-width: 600px) {
@@ -475,7 +478,8 @@ body {
 
 .box-error {
   padding-bottom: 2rem;
-  background-color: red; }
+  background-color: #fa5757;
+  border-radius: 10px; }
 
 .footer-container {
   background-color: #252b46;
