@@ -71,12 +71,7 @@ html {
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 1.8rem;
-  // overflow-x: hidden;
-
-  @include respond(phonr) {
-    width: 90%;
-    margin: auto;
-  }
+  overflow-x: hidden;
 }
 
 .header {
@@ -633,6 +628,10 @@ body {
   overflow: hidden;
 }
 
+.panel p {
+  padding-top: 1.5rem;
+}
+
 .mobile-hide {
   @include respond(phone) {
     display: none;
@@ -752,7 +751,8 @@ body {
   display: none;
 
   @include respond(phone) {
-    right: 7rem;
+    right: 2rem;
+    top: 18%;
   }
 }
 
@@ -763,10 +763,11 @@ body {
 .error-message {
   color: white;
   font-weight: 400;
-  margin-left: 3rem;
-  margin-top: -2rem;
+  margin-left: -10rem;
+  margin-top: -4rem;
   font-size: 1.2rem;
   display: none;
+  padding-top: 1rem;
 
   @include respond(phone) {
     margin-top: -2rem;
@@ -774,11 +775,11 @@ body {
 }
 
 .form-error {
-  border: 2px solid red !important;
+  border: 2px solid $softRed !important;
 }
 
 .box-error {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-color: $softRed;
   border-radius: 10px;
 

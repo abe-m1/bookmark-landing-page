@@ -67,7 +67,7 @@ function validate(e) {
   if (regEx.test(String(input.value).toLowerCase())) {
     console.log('valid');
     errorCircle.style.display = 'none';
-    form.classList.remove('form-error');
+    input.classList.remove('form-error');
     errorMessage.style.display = 'none';
     inputContainer.classList.remove('box-error');
   } else {
