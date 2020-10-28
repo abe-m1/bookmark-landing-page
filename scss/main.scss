@@ -158,17 +158,16 @@ body {
 
 .blue-pattern {
   height: 35rem;
-  width: 60%;
+  width: 45%;
   background-color: $softBlue;
   z-index: -1;
-  right: -24rem;
+  right: -17rem;
   bottom: -39px;
   position: absolute;
   border-top-left-radius: 150px;
   border-bottom-left-radius: 150px;
 
   @include respond(phone) {
-    display: none;
     right: -2rem;
     top: 59px;
     height: 21rem;
@@ -292,6 +291,18 @@ body {
 .inter h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
+
+  @include respond(phone) {
+    font-weight: 400;
+    font-size: 2.7rem;
+  }
+}
+
+.font-split {
+  @include respond(phone) {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .inter p {
@@ -418,7 +429,7 @@ body {
   // margin-right: 6rem;
 
   @include respond(phone) {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
     padding-left: 0;
   }
 }
@@ -443,6 +454,7 @@ body {
   // margin-left: 2rem;
   @include respond(phone) {
     margin-left: 0;
+    width: 100%;
   }
 }
 
@@ -450,6 +462,10 @@ body {
   margin-bottom: 2rem;
   font-size: 3.3rem;
   font-weight: 400;
+
+  @include respond(phone) {
+    font-size: 2.6rem;
+  }
 }
 
 .tab-right p {
@@ -461,6 +477,7 @@ body {
   @include respond(phone) {
     text-align: center;
     margin-bottom: 2rem;
+    line-height: 1.3;
   }
 }
 
@@ -488,7 +505,6 @@ body {
     height: 22rem;
     left: -6rem;
     bottom: -33px;
-    display: none;
   }
 }
 
@@ -500,6 +516,7 @@ body {
 
   @include respond(phone) {
     display: block;
+    margin-bottom: 21rem;
   }
 }
 
@@ -536,7 +553,7 @@ body {
 }
 
 .browser-logo {
-  width: 11rem;
+  width: 9rem;
   margin-bottom: 3rem;
 
   @include respond(phone) {
@@ -547,11 +564,15 @@ body {
 
 .box h2 {
   margin-bottom: 1.5rem;
+  font-size: 2rem;
 }
 
 .box p {
   color: $grayishBlue;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
+  @include respond(phone) {
+    margin-bottom: 7rem;
+  }
 }
 ////
 .accordion-container {
@@ -585,7 +606,7 @@ body {
 }
 
 .more-info {
-  margin-top: 8rem;
+  margin-top: 9rem;
   text-align: center;
   margin-bottom: 14rem;
 
@@ -640,7 +661,7 @@ body {
 
 .action-container {
   background-color: $softBlue;
-  padding: 6rem 4rem;
+  padding: 6rem 4rem 3.2rem 4rem;
   color: $white;
   text-align: center;
 
@@ -791,7 +812,7 @@ body {
 //
 .footer-container {
   background-color: $veryDarkBlue;
-  padding: 3rem 0;
+  padding: 2.5rem 0;
 }
 .footer {
   display: flex;
@@ -831,11 +852,12 @@ body {
 }
 
 .footer-logo {
-  width: 20rem;
+  width: 17rem;
   margin-right: 3rem;
 
   @include respond(phone) {
     margin-bottom: 3rem;
+    width: 20rem;
   }
 }
 
