@@ -1,6 +1,8 @@
+//tab styling
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 
+//main tab function
 function selectItem(e) {
   removeBorder();
   removeShow();
@@ -9,30 +11,34 @@ function selectItem(e) {
   tabContentItem.classList.add('show');
 }
 
+//remove border from previous selected tab
 function removeBorder() {
   tabItems.forEach((item) => {
     item.classList.remove('tab-border');
   });
 }
 
+//close previously opened accordian tab
 function removeShow() {
   tabContentItems.forEach((item) => {
     item.classList.remove('show');
   });
 }
 
+// add event listener for each tab
 tabItems.forEach((item) => {
   item.addEventListener('click', selectItem);
 });
 
-var acc = document.getElementsByClassName('accordion');
-var i;
+let acc = document.getElementsByClassName('accordion');
+let i;
 
+// flip arrow up and down
 for (i = 0; i < acc.length; i++) {
   let propName = `svg-icon-${i}`;
   let arrowContainer = acc[i].children[0];
   acc[i].addEventListener('click', function () {
-    var arrow = document.getElementById(propName);
+    let arrow = document.getElementById(propName);
     this.classList.toggle('active');
 
     var panel = this.nextElementSibling;
@@ -40,7 +46,6 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
       arrow.style.stroke = 'hsl(231, 69%, 60%)';
-      // arrowContainer.style.transform = 'rotate(-180deg)';
       arrowContainer.classList.remove('accordian-active');
     } else {
       panel.style.display = 'block';
@@ -53,6 +58,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+//variables for error handling
 const submitButton = document.querySelector('#button-submit');
 const input = document.querySelector('#input');
 const errorMessage = document.querySelector('.error-message');
@@ -60,6 +66,7 @@ const errorCircle = document.querySelector('.error-circle');
 const inputContainer = document.querySelector('.input-container');
 const form = document.querySelector('#form');
 
+//validation function
 function validate(e) {
   e.preventDefault();
   const regEx = /^.+@\w+\.\w+$/;
@@ -80,12 +87,12 @@ function validate(e) {
 
 submitButton.addEventListener('click', validate);
 
+// show navigation modal on mobile view
 const navButton = document.querySelector('#nav-button');
 navButton.addEventListener('click', (e) => {
   e.preventDefault();
   console.log('click', navButton.children[0].style);
   navButton.children[0].classList.toggle('hide');
-  // navButton.children[1].classList.toggle('show');
 
   document.querySelector('.nav-container').classList.toggle('show');
 });
