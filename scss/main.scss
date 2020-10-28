@@ -158,8 +158,8 @@ body {
   right: -24rem;
   bottom: -39px;
   position: absolute;
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
 
   @include respond(phone) {
     right: -2rem;
@@ -263,12 +263,12 @@ body {
 .inter {
   width: 35%;
   margin: auto;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   text-align: center;
 
   @include respond(phone) {
     width: 90%;
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
   }
 }
 
@@ -298,12 +298,12 @@ body {
   }
 }
 
-.tab-content {
-  margin-bottom: 22rem;
-  @include respond(phone) {
-    margin-bottom: 14rem;
-  }
-}
+// .tab-content {
+//   margin-bottom: 22rem;
+//   @include respond(phone) {
+//     margin-bottom: 14rem;
+//   }
+// }
 
 .tabs .container {
   display: grid;
@@ -367,17 +367,30 @@ body {
   display: flex;
   width: 80%;
   margin: auto;
-  margin-bottom: 8rem;
+  margin-bottom: 23rem;
 
   @include respond(phone) {
     display: block;
+    margin-bottom: 14rem;
+  }
+}
+
+.tab-content-inner-small {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 17rem;
+
+  @include respond(phone) {
+    display: block;
+    margin-bottom: 8rem;
   }
 }
 
 .tab-left {
   flex: 1;
   padding-top: 4rem;
-  padding-left: 8rem;
+  // padding-left: 8rem;
   position: relative;
   // margin-right: 6rem;
 
@@ -389,27 +402,42 @@ body {
 
 .tab-right {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   padding-left: 7rem;
-
+  display: flex;
+  align-content: center;
+  justify-content: center;
   @include respond(phone) {
     padding-left: 0;
   }
 }
 
+.tab-right-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  // margin-left: 2rem;
+  @include respond(phone) {
+    margin-left: 0;
+  }
+}
+
 .tab-right h2 {
   margin-bottom: 2rem;
+  font-size: 3.3rem;
+  font-weight: 400;
 }
 
 .tab-right p {
   color: $grayishBlue;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
 
   @include respond(phone) {
     text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -418,15 +446,16 @@ body {
 }
 
 .tab-image-small {
-  width: 95%;
+  width: 100%;
+  //remove
 }
 
 .blue-pattern-tab {
   height: 30rem;
-  width: 100%;
+  width: 111%;
   background-color: $softBlue;
   z-index: -1;
-  left: -16rem;
+  left: -23rem;
   bottom: -66px;
   position: absolute;
   border-top-right-radius: 100px;
@@ -453,7 +482,7 @@ body {
 .box {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 3rem 4rem;
+  padding: 4rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -465,12 +494,12 @@ body {
   }
 
   &:nth-child(2) {
-    top: 2rem;
+    top: 4rem;
     position: relative;
   }
 
   &:nth-child(3) {
-    top: 4rem;
+    top: 6rem;
     position: relative;
   }
 
@@ -483,11 +512,12 @@ body {
 }
 
 .browser-logo {
-  width: 9rem;
-  margin-bottom: 2rem;
+  width: 11rem;
+  margin-bottom: 3rem;
 
   @include respond(phone) {
     width: 11rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -575,7 +605,9 @@ body {
 }
 
 .mobile-hide {
-  display: none;
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .action-container {
